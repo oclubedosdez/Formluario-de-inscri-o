@@ -15,7 +15,7 @@ function validarEmail(email) {
 document.querySelector('#enviar').addEventListener('click', function () {
     // Obtenha os valores do formulário
 
-    progressBar.style.display = 'flex'
+    
     emailjs.init("03NHYpS3qlm0Qj1FN");
 
     // Obtenha os valores do formulário
@@ -30,8 +30,11 @@ document.querySelector('#enviar').addEventListener('click', function () {
         // alert("Por favor, digite um e-mail válido.");
 
         document.getElementById("email").classList.add("campo-invalido");
+        
         return; // Não envie o e-mail se o e-mail não for válido
 
+    } else {
+        progressBar.style.display = 'flex'
     }
 
     document.getElementById("email").value = 'Espere um minuto...';
@@ -54,6 +57,7 @@ document.querySelector('#enviar').addEventListener('click', function () {
         }, function (error) {
             console.error("Erro ao enviar o email:", error);
             alert("Erro ao enviar o email. Por favor, tente novamente.");
+
         });
 })
 
