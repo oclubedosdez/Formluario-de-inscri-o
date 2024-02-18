@@ -1,0 +1,202 @@
+:root {
+    /*Primary*/
+    --Tomato: hsl(4, 100%, 67%);
+    /*Neutral*/
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--Charcoal-Grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.container {
+    /* border: 1px solid red; */
+    background-color: white;
+    border: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 60%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.container p {
+    font-family: Roboto-Regular;
+}
+.container #banner {
+    width: 40%;
+}
+.form {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    gap: 1rem;
+
+}
+
+.container .form #titulo {
+    /* border: 1px solid red; */
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3.80rem;
+}
+
+.container .form #titulo h1 {
+    font-family: Roboto-Bold;
+    font-size: 50px;
+    color: var(--Dark-Slate-Grey);
+    margin: 0;
+}
+
+
+
+
+.container .form #novidades {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    text-align: start;
+}
+.container .form #novidades p {
+    display: flex;
+    gap: 1rem;
+}
+
+#enviar_email{
+    /* border: 1px solid rgb(0, 162, 255); */
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 10px;
+}
+#enviar_email label {
+    font-family: Roboto-Bold;
+}
+#enviar_email #email {
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    padding: 1.20rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+}
+
+#enviar {
+    transition: all 0.5s;
+    border: none;
+    background-color: var(--Dark-Slate-Grey);
+    color: white;
+    border-radius: 5px;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    padding: 1.20rem;
+    width: 80%;
+    cursor: pointer;
+}
+#enviar:hover {
+    transition: all 0.5s;
+    background: linear-gradient(90deg, rgba(255,84,120,1) 0%, rgba(253,93,93,1) 49%, rgba(255,103,66,1) 100%);
+}
+.campo-invalido {
+    border: 1px solid rgb(255, 46, 46) !important; 
+    background-color: rgba(255, 0, 0, 0.329);
+}
+/*mensagem de sucesso*/
+.mesage_sucess {
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    width: 25%;
+}
+.mesage_sucess #imagem {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.mesage_sucess h1 {
+    /* border: 1px solid red; */
+    font-family: Roboto-bold;
+    font-size: 50px;
+    color: var(--Dark-Slate-Grey);
+    margin-bottom: -0.20rem;
+}
+.mesage_sucess p {
+    /* border: 1px solid red; */
+    font-family: Roboto-regular;
+    color: var(--Dark-Slate-Grey);
+    font-size: 18px;
+}
+.mesage_sucess p a {
+    text-decoration: none;
+    font-family: Roboto-bold;
+    color: var(--Dark-Slate-Grey);
+}
+.mesage_sucess p a:hover {
+    color: red;
+}
+
+.mesage_sucess button {
+    transition: all 0.5s;
+    border: none;
+    background-color: var(--Dark-Slate-Grey);
+    color: white;
+    border-radius: 5px;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    padding: 1.20rem;
+    width: 100%;
+    cursor: pointer;
+}
+.mesage_sucess button:hover {
+    transition: all 0.5s;
+    background: linear-gradient(90deg, rgba(255,84,120,1) 0%, rgba(253,93,93,1) 49%, rgba(255,103,66,1) 100%);
+}
+
+#carregamento {
+    display: none;
+    /* border: 1px solid red; */
+    position: absolute;
+}
+#carregamento img{
+    /* border: 20px solid rgb(131,58,180); */
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+      }
+    
+      to {
+        transform: rotate(360deg);
+      }
+}

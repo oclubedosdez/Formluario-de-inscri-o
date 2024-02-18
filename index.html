@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <title>Fomulario de inscrição</title>
+</head>
+
+<body>
+  <div id="carregamento">
+    <img src="./assets/images/carregamento.png" alt="">
+  </div>
+  <section class="container">
+    <div class="form">
+      
+      <article id="titulo">
+        <h1>Fique atualizado!</h1>
+
+        <h2>Junte-se a mais de 60.000 gerentes de produto que recebem atualizações mensais sobre:</h2>
+      </article>
+
+      <article id="novidades">
+        <p><img src="./assets/images/icon-list.svg" alt="">Descoberta de produtos e construção do que importa</p>
+
+        <p><img src="./assets/images/icon-list.svg" alt="">Medir para garantir que as atualizações sejam um sucesso</p>
+
+        <p><img src="./assets/images/icon-list.svg" alt=""> E muito mais!</p>
+      </article>
+
+      <form id="enviar_email">
+        <label for="email">Endereço de e-mail</label>
+        <input type="email" id="email" name="email" required placeholder="ash@loremcompany.com">
+      </form>
+
+      <button id="enviar">Assine a newsletter mensal</button>
+    </div>
+    <img id="banner" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+  </section>
+
+  <!-- Sign-up form end -->
+
+  <!-- Mensagem de sucesso -->
+
+  <section class="mesage_sucess">
+    <div id="imagem"><img src="./assets/images/icon-success.svg" alt=""></div>
+    <h1>Obrigado pela assinatura!</h1>
+
+    <p>Um e-mail de confirmação foi enviado para <a id="user_email" href="ash@loremcompany.com">ash@loremcompany.com</a>. Abra-o e clique no botão interno para confirmar
+      sua assinatura.</p>
+
+    <button id="close_mesage">dispensar mensagem</button>
+  </section>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
