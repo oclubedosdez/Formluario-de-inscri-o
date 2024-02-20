@@ -1,12 +1,13 @@
 # Formulário de inscrição em boletim informativo com solução de mensagem de sucesso
 
-![Visualização do design do formulário de inscrição no boletim informativo com desafio de codificação de mensagem de sucesso](./design/desktop-preview.jpg)
+![Visualização do design do formulário de inscrição no boletim informativo com desafio de codificação de mensagem de sucesso](https://res.cloudinary.com/dz209s6jk/image/upload/v1685103838/Challenges/rnhx0ccfuqrdx3udhhr8.jpg)
+
 
 Esta é uma solução para o [formulário de inscrição em boletim informativo com desafio de mensagem de sucesso no Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv) . Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de obtenção por meio da construção de projetos realistas.
 
 ### O que eu aprendi
 
-Uma das coisas que aprendi foi usar o flex-direction que me permitiu mudar a direção dos elementos dentro da div, em dispositivos menores e tabém aprendi um pouco como mexer com formularios pegando o valor dentro do input e fazer a vereficação se se email e valido usando a regra regex. 
+Uma das coisas que aprendi foi usar o flex-direction que me permitiu mudar a direção dos elementos dentro da div, em dispositivos menores e tabém aprendi um pouco como mexer com formularios pegando o valor dentro do input e fazer a vereficação se o email e valido usando a regra regex. 
 
 ```html
 <section class="container">
