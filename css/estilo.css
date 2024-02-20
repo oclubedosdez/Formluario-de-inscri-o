@@ -157,8 +157,9 @@ body {
     background: linear-gradient(90deg, rgba(255,84,120,1) 0%, rgba(253,93,93,1) 49%, rgba(255,103,66,1) 100%);
 }
 .campo-invalido {
-    border: 1px solid rgb(255, 46, 46) !important; 
-    background-color: rgba(255, 0, 0, 0.329);
+    border: 1px solid rgb(255, 87, 87) !important; 
+    background-color: rgba(255, 0, 0, 0.185);
+    color: rgb(255, 76, 76);
 }
 /*mensagem de sucesso*/
 .mesage_sucess {
