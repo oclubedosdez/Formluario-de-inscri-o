@@ -2,6 +2,7 @@ var user_email = document.getElementById('user_email');
 var container = document.querySelector('.container');
 var mesage_sucess = document.querySelector('.mesage_sucess')
 var progressBar = document.getElementById('carregamento');
+var invalid_mesage = document.querySelector('#invalid_mesage')
 
 
 
@@ -30,7 +31,7 @@ document.querySelector('#enviar').addEventListener('click', function () {
         // alert("Por favor, digite um e-mail válido.");
 
         document.getElementById("email").classList.add("campo-invalido");
-        
+        invalid_mesage.style.display = 'flex'
         return; // Não envie o e-mail se o e-mail não for válido
 
     } else {
@@ -68,6 +69,7 @@ var email = document.getElementById('email');
 email.onclick = function () {
     document.getElementById("email").classList.remove("campo-invalido");
     destinatario = document.getElementById("email").value = ''
+    invalid_mesage.style.display = 'none'
 }
 
 

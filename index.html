@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/estilo.css">
   <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/responsivo.css">
   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
   <title>Fomulario de inscrição</title>
@@ -17,7 +18,7 @@
   </div>
   <section class="container">
     <div class="form">
-      
+
       <article id="titulo">
         <h1>Fique atualizado!</h1>
 
@@ -25,21 +26,37 @@
       </article>
 
       <article id="novidades">
-        <p><img src="./assets/images/icon-list.svg" alt="">Descoberta de produtos e construção do que importa</p>
+        <div>
+          <img src="./assets/images/icon-list.svg" alt="">
+          <p>Descoberta de produtos e construção do que importa</p>
+        </div>
 
-        <p><img src="./assets/images/icon-list.svg" alt="">Medir para garantir que as atualizações sejam um sucesso</p>
+        <div>
+          <img src="./assets/images/icon-list.svg" alt="">
+          <p>Medir para garantir que as atualizações sejam um sucesso</p>
+        </div>
 
-        <p><img src="./assets/images/icon-list.svg" alt=""> E muito mais!</p>
+        <div>
+          <img src="./assets/images/icon-list.svg" alt="">
+          <p>E muito mais!</p>
+        </div>
+
+
       </article>
 
       <form id="enviar_email">
-        <label for="email">Endereço de e-mail</label>
+        <div>
+          <label for="email">Endereço de e-mail</label>
+          <p id="invalid_mesage">E-mail invalido</p>
+        </div>
         <input type="email" id="email" name="email" required placeholder="ash@loremcompany.com">
       </form>
 
       <button id="enviar">Assine a newsletter mensal</button>
     </div>
+
     <img id="banner" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+    <img id="banner_mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
   </section>
 
   <!-- Sign-up form end -->
@@ -47,13 +64,16 @@
   <!-- Mensagem de sucesso -->
 
   <section class="mesage_sucess">
-    <div id="imagem"><img src="./assets/images/icon-success.svg" alt=""></div>
-    <h1>Obrigado pela assinatura!</h1>
-
-    <p>Um e-mail de confirmação foi enviado para <a id="user_email" href="ash@loremcompany.com">ash@loremcompany.com</a>. Abra-o e clique no botão interno para confirmar
-      sua assinatura.</p>
+    <div id="imagem">
+      <img src="./assets/images/icon-success.svg" alt="">
+      <h1>Obrigado pela assinatura!</h1>
+      <p>Um e-mail de confirmação foi enviado para <a id="user_email"
+          href="ash@loremcompany.com">ash@loremcompany.com</a>. Abra-o e clique no botão interno para confirmar
+        sua assinatura.</p>
+    </div>
 
     <button id="close_mesage">dispensar mensagem</button>
+
   </section>
 
 </body>
